@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- ###### 共通 ###### -->
+    <!-- アプリ名 -->
+    <string name="app_name">買物リスト</string>
+
+    <!-- アイコン -->
+    <string name="icon">アイコン</string>
+
+    <!-- 画面タイトル -->
+    <string name="shoppinglist_prepare">買物準備</string>
+    <string name="shoppinglist_confirm">買物出発確認</string>
+    <string name="shoppinglist_use">買物中</string>
+    <string name="shoppinglist_finish">買物終了、おつかれさまでした！</string>
+    <string name="shoppinglist_edit">編集</string>
+    <string name="shoppinglist_rearrange">並び換え</string>
+    <string name="shoppinglist_compare">価格比較</string>
+
+    <!-- ボタン名 -->
+    <string name="save">保存</string>
+    <string name="go">出発</string>
+    <string name="back">戻る</string>
+    <string name="exit">終了</string>
+    <string name="buy_fix">購入確定</string>
+    <string name="buy_finish">買物完了</string>
+    <string name="del">削除</string>
+    <string name="add">追加</string>
+    <string name="rearrange">並び換え</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="rearrange_shopping">買物順</string>
+    <string name="next">次へ</string>
+    <string name="edit">編集</string>
+    <string name="dismiss">閉じる</string>
+    <string name="compare_price">価格を比較する！</string>
+    <string name="finish">完了</string>
+    <string name="save_exit">保存して終了</string>
+    <string name="break_exit">変更を破棄して終了</string>
+
+    <!-- ジャンル -->
+    <string name="food">食材</string>
+    <string name="supply">消耗品</string>
+    <string name="other">その他</string>
+
+     <!-- プログレスダイアログ -->
+    <string name="waiting">お待ちください</string>
+    <string name="now_loading">データをロードしています</string>
+    <string name="making_view">データを表示します</string>
+
+	<!-- ###### 画面固有 ###### -->
+
+    <!-- 買物準備画面 -->
+    <string name="memo_hint">メモ</string>
+    <string name="category_tag">カ\nテ\nゴ\nリ\n→</string>
+    <string name="all">すべて</string>
+    <string name="slide_title"> ＞ カテゴリ選択</string>
+
+    <string name="license_license">* このアプリには、次のライセンスで配布されている製作物が含まれています。 *\n</string>
+    <string name="license_apache">Apache Software License 2.0</string>
+
+    <!-- 買物出発確認 -->
+    <string name="go_time">【出発時刻】</string>
+    <string name="check_count">\n【購入予定項目数】</string>
+    <string name="confirm_message">\n買物に出発します。よろしいですか？</string>
+    <string name="check_nothing">選択されている品物がありません。買いたい品物にチェックを入れてから出発ボタンを押してください。</string>
+
+    <!-- 買物中画面 -->
+    <string name="exit_message">買物を終了しますか？</string>
+    <string name="exit_cancel_message">買物を中断しますか？\n購入確定していない変更内容は失われます。</string>
+    <string name="show_rearrange_message">購入確定していない情報は失われますがよろしいですか？</string>
+
+    <!-- 並び換え画面 -->
+	<string name="rearrange_info">左のアイコンをドラッグ＆ドロップして並び替えます。</string>
+
+	<!-- 買物編集画面 -->
+    <string name="item_hint">品名</string>
+    <string name="category_hint">カテゴリ名</string>
+    <string name="edit_cancel_message">編集中の場合、変更内容が失われてしまいますがよろしいですか？</string>
+    <string name="save_confirm_message">編集内容を保存しますか？</string>
+    <string name="rearranege_message">変更を保存し、リストの並び換えを行います。</string>
+
+    <!-- 買物完了ダイアログ -->
+    <string name="time_start">　買物開始　</string>
+    <string name="time_finish">　買物終了　</string>
+    <string name="time_span">　経過時間　</string>
+
+    <!-- 並び換え画面 -->
+    <string name="cancel_rearrange_message">編集中ですが終了しますか？</string>
+
+    <!-- インポート -->
+    <string name="import_confirm_message">初期のデータを読み込みます。これまでの編集内容は失われてしまいますがよろしいですか？</string>
+    <string name="import_success">読込が正常に完了しました。</string>
+    <string name="import_failed">読込中にエラーが発生しました。</string>
+
+    <!-- 購入日の色設定についてダイアログ -->
+    <string name="shoppinglist_day_color">前回購入日の色設定について</string>
+    <string name="day_color_info">前回購入した日からの経過日数で色が変化します。</string>
+    <string name="day_color1">0日～1日</string>
+    <string name="day_color2">2日～3日</string>
+    <string name="day_color3">4日～5日</string>
+    <string name="day_color4">6日～7日</string>
+    <string name="day_color5">8日～10日</string>
+    <string name="day_color6">11日～13日</string>
+    <string name="day_color7">14日以降</string>
+
+    <!-- 価格比較ダイアログ -->
+    <string name="unit">個</string>
+    <string name="gram">g</string>
+    <string name="currency">円</string>
+    <string name="input_err">入力内容に誤りがあります。</string>
+    <string name="cheap">★ 安い ★</string>
+    <string name="price">価格</string>
+    <string name="amount">量</string>
+    <string name="numeration">単位</string>
+    <string name="item1">商品1</string>
+    <string name="item2">商品2</string>
+    <string name="vs">VS</string>
+
+	<!-- ###### トーストメッセージ ###### -->
+    <string name="toast_save_nothing">保存する内容がありません。</string>
+    <string name="toast_save_success">保存しました。</string>
+    <string name="toast_save_failed_cnt">件保存失敗しました。</string>
+    <string name="toast_save_failed">保存中にエラーが発生しました。</string>
+    <string name="toast_prepare_out">チェックリストを保存しました。</string>
+    <string name="toast_all_check_off">全てのチェックを外してよろしいですか？</string>
+    <string name="toast_unable_quick_add">すべてのカテゴリ選択時この機能は利用できません。</string>
+
+	<!-- ###### メニュー ###### -->
+    <string name="menu_quick_add">クイック追加</string>
+    <string name="menu_all_check_off">すべてのチェックを外す</string>
+    <string name="menu_list_edit">リストの追加/削除</string>
+    <string name="menu_help">ヘルプ</string>
+    <string name="menu_day_color">購入日の色設定について</string>
+    <string name="menu_app_exit">アプリ終了</string>
+    <string name="menu_share">共有</string>
+    <string name="menu_compare_price">価格比較</string>
+    <string name="menu_read_csv_file">データ初期化</string>
+    <string name="menu_rearrange_shopping">買物順変更</string>
+    <string name="menu_license">ライセンス</string>
+
+	<!-- ###### ヘルプ ###### -->
+    <string name="prepare_help_msg_1_1">ジャンルをタッチして選択</string>
+    <string name="prepare_help_msg_1_main">（1／4） 購入したい品物を探しましょう</string>
+    <string name="prepare_help_msg_1_2">画面左端をタッチしたまま\n右にスライドさせて\nカテゴリを選択\n例）野菜、肉、乳製品など</string>
+
+    <string name="prepare_help_msg_2_1">キーボードを隠すことができます</string>
+    <string name="prepare_help_msg_2_2">チェック</string>
+    <string name="prepare_help_msg_2_3">購入したことのある品物には直前の購入日が表示されます</string>
+    <string name="prepare_help_msg_2_4">最大１５文字までメモを残せます。\n例）○○で特売、５個買う、等</string>
+    <string name="prepare_help_msg_2_main">（2／4） 購入したい品物にチェックを入れます</string>
+    <string name="prepare_help_msg_2_category">野菜</string>
+    <string name="prepare_help_msg_2_item">たまねぎ</string>
+    <string name="prepare_help_msg_2_date">5/23</string>
+     <string name="prepare_help_msg_2_memo">5個</string>
+
+    <string name="prepare_help_msg_3_main">(3／4) 買物にでかけましょう</string>
+    <string name="prepare_help_msg_3_1">チェックをつけおわったらタッチ</string>
+
+    <string name="prepare_help_msg_4_main">(4／4) 補足：候補リストは編集できます</string>
+    <string name="prepare_help_msg_4_1">まずは自分好みにカスタマイズすることをおすすめします。</string>
+
+    <string name="use_help_main">購入済み、あるいは買物カゴに入れた品物にチェックを入れます</string>
+    <string name="use_help_1">チェックを入れた品物を非表示にします</string>
+    <string name="use_help_2">買物準備画面に戻ります</string>
+
+    <string name="edit_help_main">カテゴリの追加・修正とアイテムの追加・修正・削除ができます。</string>
+    <string name="edit_help_1">カテゴリの修正</string>
+    <string name="edit_help_2">カテゴリ・アイテム並び換え</string>
+    <string name="edit_help_3">アイテムの修正・削除</string>
+    <string name="edit_help_4">アイテムの追加</string>
+    <string name="edit_help_5">※ カテゴリ名、アイテム名が入力されていない場合、保存されません</string>
+    <string name="edit_help_6">カテゴリの追加ボタンは最下部にあります。</string>
+
+        <!--
+    <string name="xxxxx">xxxxxx</string>
+    <string name="xxxxx">xxxxxx</string>
+     -->
+    <!-- ■重要■googleアナリティクス、アドセンスのID -->
+    <string name="google_adsense_id">xxx</string>
+    <string name="google_analytics_id">xxx</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">1111</string>
+    <string name="drawer_close">1111</string>
+
+</resources>

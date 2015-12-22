@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--========================================
+         タイトル行(高さ48dp)
+    ======================================== -->
+    <!-- タイトル文字 -->
+    <style name="Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- タイトル行背景 -->
+    <style name="TitleBack">
+        <item name="android:background">@color/darkyellow</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ノーマルボタン -->
+    <style name="NormalMenuButton">
+        <item name="android:background">@drawable/button_menu_normal</item>
+        <item name="android:textColor">@drawable/button_menu_normal_text</item>
+    </style>
+
+    <!-- ポジティブボタン(押しやすいよう、目立たせる) -->
+    <style name="PositiveMenuButton">
+        <item name="android:background">@drawable/button_menu_positive</item>
+        <item name="android:textColor">@drawable/button_menu_positive_text</item>
+    </style>
+
+<!--========================================
+         デフォルト
+    ======================================== -->
+    <!-- 白背景 -->
+    <style name="BackWhite">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 色つき背景 -->
+    <style name="BackColor">
+        <item name="android:background">@color/wheat</item>
+    </style>
+
+    <!-- 標準テキスト -->
+    <style name="Text">
+        <item name="android:textColor">@color/brown</item>
+    </style>
+
+    <!-- 標準テキスト入力1（シンプル） -->
+    <style name="EditText1">
+        <item name="android:background">@drawable/edit_text1</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textColorHint">@color/wheat</item>
+    </style>
+
+    <!-- 標準テキスト入力2（背景色つき） -->
+    <style name="EditText2">
+        <item name="android:background">@drawable/edit_text2</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textColor">@drawable/edit_text_text</item>
+        <item name="android:textColorHint">@color/abricot</item>
+    </style>
+
+    <!-- インフォメーション -->
+    <style name="Info">
+        <item name="android:background">@color/wheat</item>
+        <item name="android:textColor">@color/brown</item>
+    </style>
+
+    <!-- ノーマルボタン -->
+    <style name="NormalButton">
+        <item name="android:background">@drawable/button_normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ポジティブボタン(ハイライト) -->
+    <style name="PositiveButton">
+        <item name="android:background">@drawable/button_positive</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<!--========================================
+        タブ　（　食材　｜　消耗品　｜　その他　）(高さ45dp,上マージン3dp)
+    ======================================== -->
+    <!-- 食材 -->
+    <style name="FoodTab">
+        <item name="android:background">@drawable/tab_food</item>
+        <item name="android:textColor">@drawable/tab_text</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <!-- 消耗品 -->
+    <style name="SupplyTab">
+        <item name="android:background">@drawable/tab_supply</item>
+        <item name="android:textColor">@drawable/tab_text</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <!-- その他 -->
+    <style name="OtherTab">
+        <item name="android:background">@drawable/tab_other</item>
+        <item name="android:textColor">@drawable/tab_text</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+<!--========================================
+        ボタン（丸型）(直径42dp,マージン3dp)
+    ======================================== -->
+    <!-- キーボードボタン -->
+    <style name="KeyboadButton">
+        <item name="android:background">@drawable/button_circle_keyboad</item>
+        <item name="android:textColor">@color/firebrick</item>
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:text">／</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <!-- メニューボタン-->
+    <style name="MenuButton">
+        <item name="android:background">@drawable/button_circle_menu</item>
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <!-- ヘルプボタン -->
+    <style name="HelpButton">
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">？</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <!-- 未使用 -->
+    <!-- 設定ボタン -->
+    <style name="ConfigButton">
+        <item name="android:background">@drawable/button_circle_config</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+<!--========================================
+        買物準備画面
+    ======================================== -->
+    <style name="Day">
+        <item name="android:textColor">@color/day_text</item>
+    </style>
+
+    <!-- カテゴリ行 -->
+    <style name="CategoryFood">
+        <item name="android:background">@drawable/shape_category_food</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CategorySupply">
+        <item name="android:background">@drawable/shape_category_supply</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CategoryOther">
+        <item name="android:background">@drawable/shape_category_other</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<!--========================================
+        編集中画面
+    ======================================== -->
+    <!-- 並び換えボタン -->
+    <style name="RearrangeButton">
+        <item name="android:background">@drawable/button_rearrange</item>
+        <item name="android:textColor">@color/firebrick</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <!-- カテゴリ行 -->
+    <style name="EditCategory">
+        <item name="android:background">@drawable/shape_category_edit</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <!--
+    ========================================
+        価格比較ダイアログ
+    ======================================== -->
+    <!-- 比較用の枠 -->
+    <style name="CompareFrameWin">
+        <item name="android:background">@drawable/compare_price_frame_win</item>
+        <item name="android:textColor">@color/brown</item>
+    </style>
+    <!-- 比較用の枠 -->
+    <style name="CompareFrame">
+        <item name="android:background">@drawable/compare_price_frame</item>
+        <item name="android:textColor">@color/brown</item>
+    </style>
+    <!-- 「安い！」表示 -->
+    <style name="LowPrice">
+        <item name="android:background">@color/firebrick</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+
+<!--========================================
+          買物出発確認ダイアログ画面
+    ======================================== -->
+    <style name="FoodConfirm">
+        <item name="android:background">@drawable/sticky_food</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+    <style name="SupplyConfirm">
+        <item name="android:background">@drawable/sticky_supply</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+    <style name="OtherConfirm">
+        <item name="android:background">@drawable/sticky_other</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+<!--========================================
+          並び換え画面
+    ======================================== -->
+    <style name="RearrangeText">
+        <item name="android:background">@drawable/text_rearrange</item>
+    </style>
+
+<!--========================================
+        左スライドメニュー
+    ======================================== -->
+    <!-- スライドできるよガイド -->
+    <style name="SlideTag">
+        <item name="android:background">@drawable/slide_tag</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- タイトル -->
+    <style name="SlideTitle">
+        <item name="android:background">@drawable/slide_title</item>
+        <item name="android:textColor">@color/firebrick</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- リストビューの一行 -->
+    <style name="SlideText">
+        <item name="android:background">@drawable/slide_text</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_height">48dp</item>
+         -->
+    </style>
+
+    <!-- ボタン -->
+    <style name="SlideButton">
+        <item name="android:background">@drawable/slide_button</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <!-- 背景 -->
+    <style name="SlideBack">
+        <item name="android:background">@color/wheat</item>
+    </style>
+
+<!--========================================
+        ヘルプ
+    ======================================== -->
+    <!-- メインの説明 -->
+    <style name="HelpInfoMain">
+        <item name="android:background">@color/help_base</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center|center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- ボタン -->
+    <style name="HelpDispButton">
+        <item name="android:background">@drawable/help_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <!-- サブ説明 -->
+    <style name="HelpInfoSub">
+        <item name="android:background">@color/help_sub_back</item>
+        <item name="android:textColor">@color/help_sub_font</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <!-- 矢印部分 -->
+    <style name="HelpPointer">
+        <item name="android:background">@color/help_sub_back</item>
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:rotation">45</item>
+        <!--
+        <item name="xxxx">xxxx</item>
+        <item name="xxxx">xxxx</item>
+        <item name="xxxx">xxxx</item>
+        <item name="xxxx">xxxx</item>
+        <item name="xxxx">xxxx</item>
+         -->
+    </style>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+<!-- 42dpでの使用を想定。 -->
+    
+    <!-- タブ選択時 -->
+    <item android:state_enabled="false">  
+        <layer-list>
+            <!-- 下10dpぶんの白 -->
+            <item  
+                android:top="32dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 見えているタグ -->
+            <item  android:right="3dp"
+                android:left="3dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/supplybase_color" />
+                </shape>
+            </item>
+            <!-- 線-->
+            <item android:top="15dp" 
+                android:right="3dp"
+                android:left="3dp">
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/supplydark_color1"
+                        android:dashWidth="6dp"
+                        android:dashGap="5dp"
+                        />
+                    <padding 
+                        android:bottom="15dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    
+    <!-- ボタンが押されたとき -->
+    <item android:state_pressed="true">  
+        <layer-list>
+            <!-- 下10dpぶんの白 -->
+            <item  
+                android:top="32dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 見えているタグ -->
+            <item  android:right="3dp"
+                android:left="3dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/supplydark_color1" />
+                </shape>
+            </item>
+            <!-- 線-->
+            <item android:top="15dp" 
+                android:right="3dp"
+                android:left="3dp">
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/supplybase_color"
+                        android:dashWidth="6dp"
+                        android:dashGap="5dp"
+                        />
+                    <padding 
+                        android:bottom="15dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>  
+    
+    
+    <!-- タブ非選択時 -->
+    <item>  
+        <layer-list>
+            <!-- タグ(隠れる) -->
+            <item
+                android:right="3dp"
+                android:left="3dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/supplybase_color" />
+                </shape>
+            </item>
+            <!-- 下10dpぶんの白 -->
+            <item
+                android:top="32dp">
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/white" />
+                    <padding 
+                        android:bottom="15dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item> 
+</selector>  

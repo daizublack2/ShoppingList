@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    ======================================== 
+        タイトル行
+    ========================================    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+        <!-- 保存ボタン -->
+        <!-- 
+        <Button
+            style="@style/NormalMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/save"
+            android:visibility="invisible" />
+ 		-->
+        <!-- アイコン -->
+       	<ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+			android:src="@drawable/icon"
+        	android:paddingLeft="3dp"
+			android:contentDescription="icon"
+            android:visibility="invisible"
+        />
+       		
+        <!-- タイトル -->
+        <TextView
+            style="@style/Title"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/shoppinglist_prepare"
+            android:visibility="invisible" />
+
+        <!-- 出発ボタン -->
+        <Button
+            android:id="@+id/button_go"
+            style="@style/PositiveMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/go" />
+    </LinearLayout>
+
+    <!-- ############ ヘルプ1 ############## -->
+    <View
+        style="@style/HelpPointer"
+        android:layout_gravity="right"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        style="@style/HelpInfoSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-8dp"
+        android:layout_marginRight="10dp" 
+        android:text="@string/prepare_help_msg_3_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:gravity="center_vertical" >
+
+    <!-- ############ ヘルプメイン ############## -->
+        <TextView
+            android:id="@+id/help4"
+            style="@style/HelpInfoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prepare_help_msg_3_main" />
+
+        <Button
+            android:id="@+id/okButton"
+            style="@style/HelpDispButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickNextButton"
+        	android:layout_gravity="right"
+            android:text="@string/next" />
+    <!-- ############ イラスト ############## -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+			android:src="@drawable/cat2"
+			android:contentDescription="cat"
+		 />
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+  
+    <!-- 通常状態 -->
+    <item>  
+        <layer-list>
+            <!-- 基本色 -->
+            <item
+                android:top="-16dp"
+                android:bottom="-16dp"
+                android:left="-16dp"
+                >
+                <shape android:shape="rectangle">
+           		 	<solid android:color="@color/supplybase_color" />
+           		 	<stroke
+           		 	    android:width="15dp"
+           		 	    android:color="@color/supplydark_color1"
+           		 	    />
+                </shape>
+            </item>
+            
+            
+            <!-- 右隅濃色 -->
+            <item
+                android:top="-4dp"
+                android:bottom="-4dp"
+                android:left="-4dp"
+                android:right="20dp"
+                >
+                <shape android:shape="rectangle">
+           		 	<stroke
+           		 	    android:width="2dp"
+           		 	    android:color="@color/supplydark_color1"
+           		 	    android:dashWidth="5dp"
+           		 	    android:dashGap="5dp"
+           		 	    />
+           		 	
+                    <padding 
+                        android:left="10dp"
+                        android:top="3dp"
+                		android:bottom="3dp"
+                		/>
+                </shape>
+            </item>
+        </layer-list>
+    </item> 
+</selector>

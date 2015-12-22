@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 買い物中画面 -->
+
+<!--========================================
+        タイトル行
+    ======================================== -->
+    <LinearLayout
+        style="@style/TitleBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        >
+
+        <!-- 購入確定 -->
+        <Button
+            android:id="@+id/button_fix"
+            style="@style/NormalMenuButton"
+            android:text="@string/buy_fix"
+            android:onClick="clickButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <!-- 買い物中 -->
+        <TextView
+            style="@style/Title"
+            android:text="@string/shoppinglist_use"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <!-- 買物完了 -->
+        <Button
+            android:id="@+id/button_finish"
+            style="@style/PositiveMenuButton"
+            android:text="@string/buy_finish"
+            android:onClick="clickButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+<!--========================================
+        メイン画面
+    ======================================== -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    	<ScrollView
+    	    android:id="@+id/scroll_view"
+    	    style="@style/BackWhite"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    />
+
+    	<!-- メニュー -->
+        <Button
+    	    android:id="@+id/button_menu"
+            style="@style/MenuButton"
+            android:onClick="clickMenuButton"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+
+        <!-- 広告 -->
+        <LinearLayout
+        android:id="@+id/layout_ad"
+        android:background="@color/darkyellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        />
+
+</LinearLayout>

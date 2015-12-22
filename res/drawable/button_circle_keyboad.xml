@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 円ボタン(キーボード)
+    button_circle_keyboad -->
+    
+    
+<!--======================================== 
+          ボタンが押されたとき
+    ======================================== -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- 背景:濃赤-->
+            <item 
+                >
+                <shape android:shape="ring"
+                    android:innerRadius="0dp"
+                    android:thickness="17dp"
+                    android:useLevel="false" >
+                    <solid android:color="@color/palered" />
+                </shape>
+            </item>
+            
+            <!-- 白い四角(キーボード部分) -->
+            <item 
+                android:top="13dp"
+                android:bottom="13dp" 
+                android:right="10dp"
+                android:left="10dp">
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 点線：濃赤（キー１段目） -->
+            <item 
+                android:top="7dp"
+                android:right="10dp"
+                android:left="10dp" >
+                <shape android:shape="line">
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/palered"
+                        android:dashWidth="2dp" 
+                        android:dashGap="2dp" />
+                </shape>
+            </item>
+            <!-- 点線：濃赤（キー２段目） -->
+            <item 
+                android:bottom="2dp"
+                android:right="10dp"
+                android:left="10dp"
+                >
+                <shape android:shape="line">
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/palered"
+                        android:dashWidth="2dp" 
+                        android:dashGap="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+<!--======================================== 
+          通常状態 
+    ======================================== -->
+    <item>
+        <layer-list>
+            <!-- 背景:濃赤-->
+            <item 
+                >
+                <shape android:shape="ring"
+                    android:innerRadius="0dp"
+                    android:thickness="17dp"
+                    android:useLevel="false" >
+                    <solid android:color="@color/firebrick" />
+                </shape>
+            </item>
+            
+            <!-- 白い四角(キーボード部分) -->
+            <item 
+                android:top="13dp"
+                android:bottom="13dp" 
+                android:right="10dp"
+                android:left="10dp">
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 点線：濃赤（キー１段目） -->
+            <item 
+                android:top="7dp"
+                android:right="10dp"
+                android:left="10dp" >
+                <shape android:shape="line">
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/firebrick"
+                        android:dashWidth="2dp" 
+                        android:dashGap="2dp" />
+                </shape>
+            </item>
+            <!-- 点線：濃赤（キー２段目） -->
+            <item 
+                android:bottom="2dp"
+                android:right="10dp"
+                android:left="10dp"
+                >
+                <shape android:shape="line">
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/firebrick"
+                        android:dashWidth="2dp" 
+                        android:dashGap="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

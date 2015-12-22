@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/BackColor" >
+    
+    <!-- 買物出発確認ダイアログ
+    dialog_shopping_list_confirm
+     -->
+    
+<!--======================================== 
+        タイトル行
+    ======================================== -->
+    <TextView
+        android:text="@string/shoppinglist_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TitleBack">
+    </TextView>
+    
+<!--======================================== 
+        メイン画面
+    ======================================== -->
+    <!-- スクロールビュー -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ScrollView>
+    
+<!--======================================== 
+        メッセージ行
+    ======================================== -->    
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text" />
+    
+<!--======================================== 
+      　ボタン行
+    ======================================== -->  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back" 
+        	style="@style/NormalButton">
+        </Button>
+
+        <Button
+            android:id="@+id/button_change_buy_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rearrange" 
+        	style="@style/NormalButton">
+        </Button>
+        
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/go" 
+        	style="@style/PositiveButton">
+        </Button>
+    </LinearLayout>
+    
+
+</LinearLayout>

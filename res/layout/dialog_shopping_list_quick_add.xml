@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/BackColor" >
+
+    <!-- 買物出発確認ダイアログ -->
+
+
+    <!-- タイトル -->
+    <TextView
+        style="@style/TitleBack"
+        android:text="@string/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        />
+    <!-- カテゴリ名 -->
+    <TextView
+        android:id="@+id/category"
+        style="@style/Text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        />
+    <!-- アイテム名新規入力 -->
+    <EditText
+        android:id="@+id/item"
+        style="@style/EditText2"
+        android:hint="@string/item_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="text"
+		android:maxLength="15"
+        />
+
+<!--========================================
+      　ボタン行
+    ======================================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+       	<!-- キャンセル -->
+    	<Button
+     	   	android:id="@+id/button_cancel"
+    		style="@style/NormalButton"
+        	android:text="@string/cancel"
+      	  	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+    		/>
+    	<!-- OK -->
+    	<Button
+     	   	android:id="@+id/button_ok"
+    		style="@style/PositiveButton"
+        	android:text="@string/ok"
+      	  	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+    		/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 価格比較ダイアログ -->
+
+    <!-- ### タイトル ### -->
+    <TextView
+        style="@style/TitleBack"
+        android:text="@string/shoppinglist_compare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        />
+
+    <!-- ### 単位選択 ### -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+		<!-- "単位" -->
+        <TextView
+            style="@style/Text"
+            android:text="@string/numeration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+		<!-- g/個 -->
+        <Spinner
+            android:id="@+id/numeration"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!-- ### メイン画面 ### -->
+    <LinearLayout
+        style="@style/BackWhite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        >
+
+        <!-- ### 商品1 ### -->
+        <LinearLayout
+            android:id="@+id/item1"
+            style="@style/CompareFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <!-- "商品1" -->
+            <TextView
+                style="@style/TitleBack"
+                android:text="@string/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+			<!-- 量入力 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/count1"
+                    style="@style/EditText2"
+                    android:hint="@string/amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    />
+                <TextView
+                    android:id="@+id/numeration1"
+            		style="@style/Text"
+                    android:text="@string/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+			<!-- 価格入力 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/price1"
+                    style="@style/EditText2"
+                    android:hint="@string/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    />
+                <TextView
+            		style="@style/Text"
+                    android:text="@string/currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <!-- 計算結果 -->
+            <TextView
+                android:id="@+id/result1"
+            	style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+            	/>
+            <!-- 安い！表示 -->
+            <TextView
+                android:id="@+id/moderate1"
+                style="@style/LowPrice"
+                android:text="@string/cheap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+        <!-- ### VS ### -->
+        <TextView
+            style="@style/LowPrice"
+            android:text="@string/vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+
+        <!-- ### 商品2 ### -->
+        <LinearLayout
+            android:id="@+id/item2"
+            style="@style/CompareFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+            <!-- "商品2" -->
+            <TextView
+                style="@style/TitleBack"
+                android:text="@string/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+			<!-- 量入力 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/count2"
+                    style="@style/EditText2"
+                    android:hint="@string/amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    />
+                <TextView
+                    android:id="@+id/numeration2"
+            		style="@style/Text"
+                    android:text="@string/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <!-- 価格入力 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/price2"
+                    style="@style/EditText2"
+                    android:hint="@string/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    />
+                <TextView
+            		style="@style/Text"
+                    android:text="@string/currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    />
+            </LinearLayout>
+
+            <!-- 計算結果 -->
+            <TextView
+                android:id="@+id/result2"
+            	style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+            	/>
+
+            <!-- 安い！表示 -->
+            <TextView
+                android:id="@+id/moderate2"
+                style="@style/LowPrice"
+                android:text="@string/cheap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ### ボタン行 ### -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:splitMotionEvents="false"
+        android:orientation="horizontal"
+        >
+    	<Button
+        android:id="@+id/button_back"
+        style="@style/NormalButton"
+        android:text="@string/back"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    	<Button
+        android:id="@+id/button_compare"
+        style="@style/PositiveButton"
+        android:text="@string/compare_price"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/menu_keyboad"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:showAsAction="ifRoom"
+        android:title="元に戻す"/>
+
+    <!-- リセット -->
+    <item
+        android:id="@+id/menu_reset"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:showAsAction="ifRoom"
+        android:title="元に戻す"/>
+    
+    <!-- インポート -->
+    <item
+        android:id="@+id/menu_import"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:showAsAction="ifRoom"
+        android:title="インポート"/>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/EditCategory"
+    android:layerType="software" >
+
+    <!-- 買物編集画面　カテゴリ名編集 -->
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"  >
+
+        <!-- カテゴリ名 -->
+        <EditText
+            android:id="@+id/category"
+        	style="@style/EditText2"
+        	android:hint="@string/category_hint"
+        	android:maxLength="15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        	android:inputType="text"
+        />
+    </LinearLayout>
+
+    <!-- 並び換えボタン -->
+    <Button
+        android:id="@+id/button_rearrange"
+        style="@style/RearrangeButton"
+        android:text="@string/rearrange"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+
+</LinearLayout>

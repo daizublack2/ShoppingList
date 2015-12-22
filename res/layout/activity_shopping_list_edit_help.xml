@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+  activity_shopping_list_edit  
+    買物リスト編集画面    -->
+
+    <!-- ヘルプ行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <!-- ############ ヘルプ1 ############## -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-7dp"
+                android:text="@string/edit_help_1" />
+
+            <View
+                style="@style/HelpPointer"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <!-- ############ ヘルプ2 ############## -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-7dp"
+                android:text="@string/edit_help_2" />
+
+            <View
+                style="@style/HelpPointer"
+                android:layout_gravity="right"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- カテゴリ行 -->
+    <LinearLayout
+        style="@style/EditCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layerType="software"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/category"
+                style="@style/EditText2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/category_hint" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_rearrange"
+            style="@style/RearrangeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rearrange"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <!-- アイテム行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BackWhite"
+        android:orientation="horizontal" >
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <EditText
+                android:id="@+id/item"
+                style="@style/EditText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/item_hint" />
+        	<!-- ############ ヘルプ3 ############## -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:orientation="horizontal" >
+                <View style="@style/HelpPointer" />
+                <TextView
+                    style="@style/HelpInfoSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:text="@string/edit_help_3" />
+                <View
+                    style="@style/HelpPointer"
+                    android:layout_marginRight="3dp" />
+            </LinearLayout>
+        </FrameLayout>
+        <Button
+            android:id="@+id/button_del"
+            style="@style/NormalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/del" />
+    </LinearLayout>
+
+    <!-- アイテム追加行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BackWhite"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_add"
+            style="@style/NormalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="@string/add" />
+        <!-- ############ ヘルプ4 ############## -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <View
+                style="@style/HelpPointer"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp" />
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp"
+                android:text="@string/edit_help_4" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- ############ ヘルプメイン ############## -->
+    <TextView
+        style="@style/HelpInfoMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_help_main" />
+    <Button
+        android:id="@+id/okButton"
+        style="@style/HelpDispButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="clickNextButton"
+        android:text="@string/dismiss" />
+    
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/edit_help_5" />
+    
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/edit_help_6" />
+            <View
+                style="@style/HelpPointer"
+                android:layout_gravity="center" />
+
+</LinearLayout>

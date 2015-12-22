@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    
+<!--======================================== 
+          ボタンが非アクティブ
+    ======================================== -->
+    <item android:state_enabled="false">  
+        <layer-list>
+            <!-- 背景：明緑 -->
+            <item
+        		android:bottom="4dp" 
+        		android:left="4dp" 
+        		android:right="4dp" 
+        		android:top="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/lightgreen" />
+                </shape>
+            </item>
+            <!-- 枠：白点線 -->
+            <item 
+                android:bottom="6dp" 
+                android:left="6dp" 
+                android:right="6dp" 
+                android:top="6dp">
+                <shape android:shape="rectangle">
+                    <stroke 
+                        android:width="1dp" 
+                        android:color="@color/white" 
+                        android:dashWidth="4dp" 
+                        android:dashGap="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+<!--======================================== 
+          ボタンが押されたとき
+    ======================================== -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- 背景：明緑 -->
+            <item
+        		android:bottom="4dp" 
+        		android:left="4dp" 
+        		android:right="4dp" 
+        		android:top="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/lightgreen" />
+                </shape>
+            </item>
+            <!-- 枠：深緑点線 -->
+            <item 
+                android:bottom="6dp" 
+                android:left="6dp" 
+                android:right="6dp" 
+                android:top="6dp">
+                <shape android:shape="rectangle">
+                    <stroke 
+                        android:width="1dp" 
+                        android:color="@color/darkgreen" 
+                        android:dashWidth="4dp" 
+                        android:dashGap="2dp" />
+           			<padding 
+           			    android:top="8dp" 
+           			    android:left="16dp" 
+           			    android:bottom="8dp" 
+           			    android:right="16dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>  
+        
+<!--======================================== 
+          通常状態 
+    ======================================== -->
+    <item>
+        <layer-list>
+            <!-- 背景：深緑 -->
+            <item
+        		android:bottom="4dp" 
+        		android:left="4dp" 
+        		android:right="4dp" 
+        		android:top="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/darkgreen" />
+                </shape>
+            </item>
+            <!-- 枠：白点線 -->
+            <item 
+                android:bottom="6dp" 
+                android:left="6dp" 
+                android:right="6dp" 
+                android:top="6dp">
+                <shape android:shape="rectangle">
+                    <stroke 
+                        android:width="1dp" 
+                        android:color="@color/white" 
+                        android:dashWidth="4dp" 
+                        android:dashGap="2dp" />
+           			<padding 
+           			    android:top="8dp" 
+           			    android:left="16dp" 
+           			    android:bottom="8dp" 
+           			    android:right="16dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>  

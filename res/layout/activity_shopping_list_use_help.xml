@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 買い物中画面 -->
+
+
+    <!--
+    ======================================== 
+        タイトル行
+    ========================================
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 購入確定 -->
+
+        <Button
+            android:id="@+id/button_fix"
+            style="@style/NormalMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buy_fix" />
+
+        <!-- 買い物中 -->
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/shoppinglist_use"
+            android:visibility="invisible" />
+
+        <!-- 買物完了 -->
+
+        <Button
+            android:id="@+id/button_finish"
+            style="@style/PositiveMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buy_finish" />
+    </LinearLayout>
+
+   
+    <!-- ヘルプ行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+            android:gravity="top"
+        android:orientation="horizontal" >
+        <!-- ############ ヘルプ1 ############## -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp" 
+            android:layout_marginLeft="10dp" 
+            android:orientation="vertical" >
+            <View
+                style="@style/HelpPointer"
+            	android:layout_gravity="left"
+            	android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                style="@style/HelpInfoSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/use_help_1" />
+        </LinearLayout>
+        <!-- ############ ヘルプ2 ############## -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" 
+            android:layout_marginLeft="5dp" 
+            android:orientation="vertical" >
+            <View
+                style="@style/HelpPointer"
+            	android:layout_gravity="right"
+            	android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:id="@+id/help"
+                style="@style/HelpInfoSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:text="@string/use_help_2" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- ############ ヘルプメイン ############## -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/HelpInfoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/use_help_main" />
+        <Button
+            android:id="@+id/okButton"
+            style="@style/HelpDispButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickNextButton"
+            android:text="@string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

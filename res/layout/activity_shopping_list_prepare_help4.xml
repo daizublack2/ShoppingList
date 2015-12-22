@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/help_main"
+            style="@style/HelpInfoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/prepare_help_msg_4_main" />
+        <TextView
+            android:id="@+id/help_sub"
+            style="@style/HelpInfoSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/prepare_help_msg_4_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/HelpDispButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickEditButton"
+                android:text="@string/edit" />
+
+            <Button
+                style="@style/HelpDispButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickNextButton"
+                android:text="@string/dismiss" />
+        </LinearLayout>
+    <!-- ############ イラスト ############## -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+			android:src="@drawable/cat1"
+			android:contentDescription="cat"
+		 />
+
+</LinearLayout>

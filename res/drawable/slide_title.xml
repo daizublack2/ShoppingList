@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 48dp想定 -->
+
+
+    <item><layer-list>
+        
+    <!-- 下の線(緑) -->
+    <item
+        android:top="-2dp"
+        android:left="-2dp"
+        android:right="-2dp">
+        <shape android:shape="rectangle" >
+            <solid
+                android:color="@color/wheat"
+                />
+            <stroke
+                android:color="@color/green"
+                android:width="1dp"
+                />
+        </shape>
+    </item>
+    
+    <!-- 上2段目の線(ピンク) -->
+    <item
+        android:left="-15dp"
+        android:right="-15dp"
+        android:bottom="-15dp">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:color="@color/pink"
+                android:width="14dp"
+                />
+        </shape>
+    </item>
+   
+    <!-- 上の線(赤) -->
+    <item
+        android:bottom="-12dp"
+        android:left="-12dp"
+        android:right="-12dp">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:color="@color/firebrick"
+                android:width="10dp"
+                />
+            <padding android:top="10dp" />
+        </shape>
+    </item>
+    
+    </layer-list></item> 
+</selector>

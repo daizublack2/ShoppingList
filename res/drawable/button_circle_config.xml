@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <!-- 背景、赤 -->
+            <item 
+                >
+                <shape android:shape="ring"
+                    android:innerRadius="12dp"
+                    android:thickness="0dp"
+                    android:useLevel="false"
+                    >
+                    <solid 
+                        android:color="@color/firebrick" />
+                    <stroke 
+                        android:width="10dp" 
+                        android:color="@color/firebrick" />
+                </shape>
+            </item>
+            <!-- 白い円 -->
+            <item 
+                >
+                <shape android:shape="ring"
+                    android:innerRadius="5dp"
+                    android:thickness="0dp"
+                    android:useLevel="false"
+                    >
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 白い点線の円 -->
+            <item 
+                >
+                <shape android:shape="ring"
+                    android:innerRadius="8dp"
+                    android:thickness="0dp"
+                    android:useLevel="false"
+                    >
+                    <stroke 
+                        android:width="3dp" 
+                        android:color="@color/white"
+                        android:dashWidth="3dp" 
+                        android:dashGap="3dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

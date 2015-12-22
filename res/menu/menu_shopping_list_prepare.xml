@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!-- 左 -->
+    <!-- キーボードを隠す -->
+    <item
+        android:id="@+id/hide_keyboad"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom"
+        android:title="キーボードを隠す"/>
+    
+    <!-- チェックボックス全部OFF化 -->
+    <item
+        android:id="@+id/all_checkbox_off"
+        android:icon="@android:drawable/checkbox_off_background"
+        android:showAsAction="ifRoom"
+        android:title="すべてのチェックをはずす"/>
+    
+    
+    <!-- 追加・編集 -->
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="リストの編集"/>
+<!--　右 -->
+</menu>

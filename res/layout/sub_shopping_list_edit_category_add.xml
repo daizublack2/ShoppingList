@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal"
+    android:layerType="software"
+    style="@style/EditCategory" >
+
+    <!-- 買物編集画面　カテゴリ追加行 -->
+
+    <!-- 追加ボタン -->
+    <Button
+        android:onClick="clickButton"
+        android:id="@+id/button_aadd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/add"
+    	style="@style/RearrangeButton" />
+    <!-- android:onClick="onTopButton" -->
+
+</LinearLayout>

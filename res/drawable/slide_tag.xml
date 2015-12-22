@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+        
+    <item>
+        <layer-list>
+            <!-- 赤い四角 -->
+            <item
+        		android:left="-4dp" 
+        		android:right="4dp" 
+        		android:top="4dp"
+        		android:bottom="4dp" >
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/firebrick" />
+            		<corners 
+                		android:radius="5dp" />
+                </shape>
+            </item>
+            <!-- 点線 -->
+            <item
+        		android:left="-4dp" 
+        		android:right="6dp" 
+        		android:top="6dp"
+        		android:bottom="6dp" >
+                <shape android:shape="rectangle">
+            		<corners 
+                		android:radius="5dp" />
+                    <stroke 
+                        android:width="1dp" 
+                        android:color="@color/white" 
+                        android:dashWidth="4dp" 
+                        android:dashGap="2dp" />
+            		<padding 
+            		    android:left="4dp" 
+            		    android:right="12dp"
+            		    android:top="16dp" 
+            		    android:bottom="24dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>  

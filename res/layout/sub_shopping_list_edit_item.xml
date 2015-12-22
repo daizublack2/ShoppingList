@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- 買物編集画面　アイテム編集 -->
+    
+    <!-- アイテム入力欄 -->
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1" 
+        android:maxLength="15"
+        android:inputType="text"
+       	style="@style/EditText2"
+        android:hint="@string/item_hint"
+        />
+
+    <!-- 背景 -->
+    <Button
+        android:id="@+id/button_del"
+        android:text="@string/del"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        style="@style/NormalButton"/>
+
+</LinearLayout>

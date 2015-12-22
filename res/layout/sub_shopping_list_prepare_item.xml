@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!--
+    sub_shopping_list_prepare_item
+    買物準備画面のアイテム行描画
+     -->
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- 購入日 -->
+        <TextView
+            android:id="@+id/date"
+            style="@style/Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <CheckBox
+            android:id="@+id/item"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/date"
+            />
+
+    </RelativeLayout>
+
+	<!-- メモ -->
+    <EditText
+        android:id="@+id/memo"
+        style="@style/EditText1"
+        android:hint="@string/memo_hint"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:maxLength="20"
+         />
+
+    <!-- TODO -->
+    <!--
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/memo"
+            style="@style/EditText1"
+            android:hint="@string/memo_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="20"
+             />
+    </LinearLayout>
+ 	-->
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--
+  activity_shopping_list_edit
+    買物リスト編集画面
+     -->
+
+<!--========================================
+        タイトル行
+    ======================================== -->
+    <LinearLayout
+        style="@style/TitleBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false"
+        >
+
+        <!-- 終了ボタン -->
+        <Button
+        	android:id="@+id/button_exit"
+        	style="@style/NormalMenuButton"
+        	android:text="@string/exit"
+        	android:onClick="clickExitButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            />
+
+        <!-- タイトル行 -->
+       <TextView
+       		style="@style/Title"
+        	android:text="@string/shoppinglist_edit"
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        />
+
+       <!-- 保存ボタン -->
+        <Button
+        	android:id="@+id/button_save"
+        	style="@style/PositiveMenuButton"
+        	android:text="@string/save"
+        	android:onClick="clickSaveButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+<!--========================================
+        タブ行
+    ======================================== -->
+        <LinearLayout
+            style="@style/BackColor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false"
+            >
+
+            <!-- 食材タブ -->
+            <Button
+                android:id="@+id/button_food"
+                style="@style/FoodTab"
+                android:text="@string/food"
+                android:onClick="clickTabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+        		android:layerType="software"
+        		/>
+
+            <!-- 消耗品タブ -->
+            <Button
+                android:id="@+id/button_supply"
+                style="@style/SupplyTab"
+                android:text="@string/supply"
+                android:onClick="clickTabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+        		android:layerType="software" />
+
+            <!-- その他タブ -->
+            <Button
+                android:id="@+id/button_other"
+                style="@style/OtherTab"
+                android:text="@string/other"
+                android:onClick="clickTabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+        		android:layerType="software"
+                />
+
+            <!-- キーボードボタン -->
+            <Button
+                android:id="@+id/button_keyboad"
+                style="@style/KeyboadButton"
+                android:onClick="clickKeyboadButton"
+                android:layerType="software"
+                />
+
+            <!-- メニューボタン -->
+            <Button
+                android:id="@+id/button_menu"
+                style="@style/MenuButton"
+                android:onClick="clickMenuButton"
+                android:layerType="software"
+                />
+        </LinearLayout>
+
+<!--========================================
+        メイン画面
+    ======================================== -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        style="@style/BackWhite"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        >
+    </ScrollView>
+</LinearLayout>

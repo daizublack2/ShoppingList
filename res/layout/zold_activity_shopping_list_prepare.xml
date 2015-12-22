@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+activity_shopping_list_prepare.xml
+買物準備画面
+ -->
+    
+    <!-- ボタン行　終了　|　保存　｜　買物スタート -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_exit"
+            android:onClick="clickButton"
+            android:text="終了"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:onClick="clickButton"
+            android:text="保存"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/button_go"
+            android:onClick="clickButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="買物スタート！" />
+    </LinearLayout>
+    
+    <!-- 説明 -->
+    <TextView
+        android:id="@+id/shopping_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Info"  />
+
+    <!-- ボタン行　 食材 | 消耗品　|　その他 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+   	 	android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_food"
+            android:onClick="clickButton"
+            android:text="食材"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/FoodTab" 
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_supply"
+            android:onClick="clickButton"
+            android:text="消耗品"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/FoodTab" 
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_other"
+            android:onClick="clickButton"
+            android:text="その他"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/FoodTab" 
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+    <!-- ここにチェックリストを表示 -->
+    <ScrollView
+        android:id="@+id/buy_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    </ScrollView>
+
+</LinearLayout>

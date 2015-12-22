@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<!--========================================
+        タイトル行
+    ======================================== -->
+        <LinearLayout
+            style="@style/TitleBack"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+    		android:splitMotionEvents="false"
+            android:orientation="horizontal"
+            >
+
+            <!-- アイコン -->
+       		<ImageView
+				android:src="@drawable/icon"
+            	android:layout_width="42dp"
+                android:layout_height="42dp"
+        		android:paddingLeft="3dp"
+				android:contentDescription="@string/icon"
+		 		/>
+
+            <!-- タイトル -->
+            <TextView
+            	style="@style/Title"
+                android:text="@string/shoppinglist_prepare"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layerType="software"
+                />
+
+	        <!-- 出発ボタン -->
+            <Button
+                android:id="@+id/button_go"
+                style="@style/PositiveMenuButton"
+                android:text="@string/go"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="clickGoButton"
+                />
+        </LinearLayout>
+
+<!--========================================
+       タブ行
+    ======================================== -->
+        <LinearLayout
+            style="@style/BackColor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+    		android:splitMotionEvents="false"
+            >
+
+            <!-- 食材 -->
+            <Button
+                android:id="@+id/button_food"
+                style="@style/FoodTab"
+                android:text="@string/food"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:onClick="clickTabButton"
+                android:layerType="software"
+                />
+
+			<!-- 消耗品 -->
+            <Button
+                android:id="@+id/button_supply"
+                style="@style/SupplyTab"
+                android:text="@string/supply"
+                android:onClick="clickTabButton"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layerType="software"
+                />
+
+			<!-- その他 -->
+            <Button
+                android:id="@+id/button_other"
+                style="@style/OtherTab"
+                android:text="@string/other"
+                android:onClick="clickTabButton"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layerType="software"
+                />
+
+            <!-- キーボード -->
+            <Button
+                android:id="@+id/button_keyboad"
+                style="@style/KeyboadButton"
+                android:onClick="clickKeyboadButton"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layerType="software"
+                />
+
+            <!-- メニュー -->
+            <Button
+                android:id="@+id/button_menu"
+                style="@style/MenuButton"
+                android:onClick="clickMenuButton"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layerType="software"
+                />
+        </LinearLayout>
+
+<!--========================================
+        メイン画面
+    ======================================== -->
+        <FrameLayout
+            	android:layout_width="match_parent"
+            	android:layout_height="0dip"
+            	android:layout_weight="1"
+            >
+
+            <!-- メイン画面 -->
+        	<ScrollView
+            	android:id="@+id/main_view"
+            	style="@style/BackWhite"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	/>
+
+        	<!-- スライドメニューガイド -->
+            <TextView
+        		style="@style/SlideTag"
+            	android:text="@string/category_tag"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="bottom"
+            	android:layout_marginBottom="20dp"
+            	/>
+        </FrameLayout>
+    </LinearLayout>
+
+<!--========================================
+        左スライドメニュー
+    ======================================== -->
+    <LinearLayout
+        style="@style/SlideBack"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:splitMotionEvents="false"
+        android:orientation="vertical" >
+
+        <!-- スライドメニュータイトル -->
+        <TextView
+            android:id="@+id/slide_title"
+            style="@style/SlideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            />
+
+        <!-- カテゴリ一覧 -->
+        <ListView
+            android:id="@+id/navigation_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" >
+        </ListView>
+
+        <!-- 全てボタン -->
+        <Button
+            android:id="@+id/all_category_button"
+            style="@style/SlideButton"
+            android:text="@string/all"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layerType="software"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

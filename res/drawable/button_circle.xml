@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 
+    button_circle
+    	円ボタン 
+    -->
+    
+<!--======================================== 
+          ボタンが押されたとき
+    ======================================== -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- 「円」　背景:薄赤 -->
+            <item>
+                <shape android:shape="ring"
+                    android:innerRadius="0dp"
+                    android:thickness="17dp"
+                    android:useLevel="false">
+                    <solid android:color="@color/palered" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+<!--======================================== 
+          通常状態 
+    ======================================== -->
+    <item>
+        <layer-list>
+            <!-- 「円」　背景:濃赤 -->
+            <item>
+                <shape android:shape="ring"
+                    android:innerRadius="0dp"
+                    android:thickness="17dp"
+                    android:useLevel="false">
+                    <solid android:color="@color/firebrick" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

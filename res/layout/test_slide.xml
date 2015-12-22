@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SlideBack"
+	android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        style="@style/PositiveMenuButton"
+        android:layout_width="match_parent"
+    	android:layout_height="48dp"
+        android:text="タイトル" />
+    
+    <Button
+        style="@style/NormalMenuButton"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:text="テキスト" />
+    <Button
+        style="@style/SlideText"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:text="テキスト" />
+    <Button
+        style="@style/SlideTitle"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:text="テキスト" />
+    <Button
+        style="@style/SlideText"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:text="テキスト" />
+    <Button
+        style="@style/SlideButton"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:text="テキスト" />
+
+</LinearLayout>

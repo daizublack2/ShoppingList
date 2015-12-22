@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal" >
+
+    <!-- 買い物中画面＜サブ＞　アイテム行 -->
+
+        <CheckBox
+            android:id="@+id/item"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+        	style="@style/Text" />
+
+        <TextView
+            android:id="@+id/memo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	style="@style/Text"  />
+
+</LinearLayout>
